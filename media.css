@@ -1,0 +1,83 @@
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    min-height: 400px;
+  }
+
+  .card::before {
+    clip-path: polygon(20% 100%, 100% 20%, 100% 100%, 0 100%);
+  }
+
+  .profile-sidebar {
+    padding: 10px;
+  }
+
+  .profile-img {
+    border-radius: 5px;
+    border: 1px solid var(--gray-color);
+    height: 200px;
+    width: 200px;
+  }
+
+  .profile-main {
+    text-align: left;
+    margin-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .profile-position {
+    font-size: 1.2rem;
+    padding-top: 3px;
+  }
+
+  .profile-list {
+    padding-top: 30px;
+    padding-left: 0;
+  }
+
+  .profile-link {
+    margin-left: 0;
+  }
+
+  .tri-1 {
+    top: 0;
+    left: 10%;
+    transform: rotate(25deg);
+  }
+
+  .tri-2 {
+    top: 0;
+    right: 0;
+    opacity: 1;
+    visibility: 1;
+    transform: rotate(25deg);
+  }
+
+  .tri-3 {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-25deg);
+    opacity: 0;
+    visibility: 0;
+  }
+
+  .tri-4 {
+    bottom: 0;
+    right: 10%;
+    transform: rotate(-52deg);
+  }
+  .work-box {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .work-box:last-child {
+    flex-direction: row-reverse;
+  }
+}

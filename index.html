@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Portofolio</h1>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="card">
+        <div class="profile-sidebar">
+          <img class="profile-img" src="img/me2.jpg" alt="my-face" />
+        </div>
+
+        <div class="profile-main">
+          <h2 class="profile-name">Itsuki Tomizawa</h2>
+          <p class="profile-position">Front End Developer</p>
+          <div class="profile-list">
+            <a href="#" class="btn-link btn">Work</a>
+            <a href="#" class="btn-link btn btn-white">Contact</a>
+          </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="#"><i class="far fa-file"></i></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="triangle tri-1"></div>
+      <div class="triangle tri-2"></div>
+      <div class="triangle tri-3"></div>
+      <div class="triangle tri-4"></div> -->
+
+    <section id="work">
+      <h2 class="heading">My Latest Work</h2>
+      <div class="work-box">
+        <div class="work-left">
+          <h3>Full Stack Stock Management</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            molestias qui dolores eius nesciunt harum cum fugit sequi maxime.
+            Eaque.
+          </p>
+          <div class="button-group">
+            <a href="#" class="btn-link btn">Live</a>
+            <a href="#" class="btn-link btn btn-white">Code</a>
+          </div>
+        </div>
+        <div class="work-right">
+          <video
+            class="video-right"
+            src="video/text.mov"
+            autoplay
+            loop
+            muted
+            width="300"
+            height="290"
+          ></video>
+        </div>
+      </div>
+      <div class="work-box">
+        <div class="work-left">
+          <h3>Full Stack Stock Management</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            molestias qui dolores eius nesciunt harum cum fugit sequi maxime.
+            Eaque.
+          </p>
+          <div class="button-group">
+            <a href="#" class="btn-link btn">Live</a>
+            <a href="#" class="btn-link btn btn-white">Code</a>
+          </div>
+        </div>
+        <div class="work-right">
+          <video
+            class="video-left"
+            src="video/text.mov"
+            autoplay
+            loop
+            muted
+            width="300"
+            height="290"
+          ></video>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 25,
+      speed: 400,
+    });
+  </script>
+  <script src="app.js"></script>
+</html>
