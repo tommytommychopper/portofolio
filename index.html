@@ -17,20 +17,37 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="media.css" />
     <title>Portofolio</title>
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="header-container">
         <h1 class="logo">Portofolio</h1>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact</a>
-          </li>
-        </ul>
+        <div class="menu-container">
+          <input class="toggler" type="checkbox" />
+          <div class="hamburger">
+            <div></div>
+          </div>
+          <ul class="menu">
+            <div>
+              <div>
+                <ul class="menu-list">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -69,55 +86,109 @@
       <div class="triangle tri-4"></div> -->
 
     <section id="work">
-      <h2 class="heading">My Latest Work</h2>
-      <div class="work-box">
-        <div class="work-left">
-          <h3>Full Stack Stock Management</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            molestias qui dolores eius nesciunt harum cum fugit sequi maxime.
-            Eaque.
-          </p>
-          <div class="button-group">
-            <a href="#" class="btn-link btn">Live</a>
-            <a href="#" class="btn-link btn btn-white">Code</a>
+      <div class="container">
+        <h2 class="heading">My Latest Work</h2>
+        <div class="work-box">
+          <div class="work-left">
+            <h3>Full Stack Stock Management</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              molestias qui dolores eius nesciunt harum cum fugit sequi maxime.
+              Eaque.
+            </p>
+            <div class="button-group">
+              <a href="#" class="btn-link btn">Live</a>
+              <a href="#" class="btn-link btn btn-white">Code</a>
+            </div>
+          </div>
+          <div class="work-right">
+            <video
+              class="video-right"
+              src="video/text.mov"
+              autoplay
+              loop
+              muted
+              width="420"
+              height="380"
+            ></video>
           </div>
         </div>
-        <div class="work-right">
-          <video
-            class="video-right"
-            src="video/text.mov"
-            autoplay
-            loop
-            muted
-            width="300"
-            height="290"
-          ></video>
+        <div class="work-box">
+          <div class="work-left">
+            <h3>Full Stack Stock Management</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              molestias qui dolores eius nesciunt harum cum fugit sequi maxime.
+              Eaque.
+            </p>
+            <div class="button-group">
+              <a href="#" class="btn-link btn">Live</a>
+              <a href="#" class="btn-link btn btn-white">Code</a>
+            </div>
+          </div>
+          <div class="work-right">
+            <video
+              class="video-left"
+              src="video/text.mov"
+              autoplay
+              loop
+              muted
+              width="420"
+              height="380"
+            ></video>
+          </div>
         </div>
       </div>
-      <div class="work-box">
-        <div class="work-left">
-          <h3>Full Stack Stock Management</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            molestias qui dolores eius nesciunt harum cum fugit sequi maxime.
-            Eaque.
-          </p>
-          <div class="button-group">
-            <a href="#" class="btn-link btn">Live</a>
-            <a href="#" class="btn-link btn btn-white">Code</a>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="heading">Contact</h2>
+        <div class="contact-box">
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Mail</h3>
+                <p>itsukitomizawa@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Phone</h3>
+                <p>(+81)03-5497-6565</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Address</h3>
+                <p>Tokyo, Japan</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="work-right">
-          <video
-            class="video-left"
-            src="video/text.mov"
-            autoplay
-            loop
-            muted
-            width="300"
-            height="290"
-          ></video>
+          <div class="contact-form">
+            <form action="#">
+              <h3>Message Me</h3>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <input type="submit" value="Send" class="btn-link btn" />
+            </form>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,7 @@
 @media (min-width: 600px) {
+  .container {
+    padding: 4rem 2rem;
+  }
   .card {
     flex-direction: row;
     min-height: 400px;
@@ -80,4 +83,64 @@
   .work-box:last-child {
     flex-direction: row-reverse;
   }
+
+  /* Contact */
+  .contact-box {
+    flex-direction: row;
+  }
+
+  .contact-list {
+    text-align: left;
+  }
+
+  .contact-item {
+    display: flex;
+    text-align: left;
+    padding: 1rem;
+    line-height: 1.4;
+  }
+
+  .contact-item::after {
+    display: none;
+  }
+
+  .contact-info {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .contact-info p {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .contact-form {
+    display: block;
+    margin-top: 0;
+  }
+
+  /* .toggler,
+  .hamburger {
+    display: none;
+  }
+
+  .menu-list {
+    display: flex;
+  }
+
+  .nav-item {
+    position: relative;
+    padding: 0.2rem 1.5rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    position: relative;
+  } */
 }

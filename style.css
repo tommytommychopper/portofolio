@@ -17,17 +17,24 @@ body {
   color: var(--dark-color);
 }
 
+ul {
+  list-style: none;
+}
+
 /* Utilities */
 .container {
-  padding: 0 4rem;
+  padding: 2rem 1rem;
   margin: auto;
   overflow: hidden;
-  /* max-width: 1500px; */
+  max-width: 1300px;
 }
 
 .heading {
   margin-bottom: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -58,42 +65,31 @@ body {
   background: var(--white-color);
   color: var(--dark-color);
 }
+
 /* Header Section */
 header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   z-index: 10000;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background: #f4f6f7;
+  opacity: 0.8;
+}
+
+.header-container {
+  padding: 0 1rem;
+  overflow: hidden;
 }
 
 .logo {
   font-size: 1.5rem;
   letter-spacing: 1px;
-}
-
-.nav-list {
-  display: none;
-  list-style-type: none;
-}
-
-.nav-item {
-  position: relative;
-  padding: 0.2rem 1.5rem;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: var(--dark-color);
-  position: relative;
-}
-
-.nav-item:last-child .nav-link {
-  color: var(--white-color);
+  text-transform: uppercase;
 }
 
 .nav-link::after {
@@ -107,10 +103,6 @@ header {
   transform: scaleX(0);
   transition: transform 500ms;
   transform-origin: left;
-}
-
-.nav-item:last-child .nav-link::after {
-  background: var(--white-color);
 }
 
 .nav-link:hover::after {
@@ -241,33 +233,34 @@ header {
 }
 
 /* Work Section */
-
-#work {
-  text-align: center;
-  height: 100vh;
-}
-
 .work-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
-  max-width: 70%;
+  max-width: 1200px;
   margin: auto;
+  text-align: center;
+  line-height: 1.6;
 }
 
 .work-left {
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .work-left h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .work-left p {
   text-align: left;
-  padding: 0.5rem 0;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .work-left .button-group {
@@ -277,7 +270,7 @@ header {
 }
 
 .work-right {
-  min-width: 300px;
+  min-width: 500px;
 }
 
 .video-right {
@@ -304,4 +297,99 @@ header {
   /* box-shadow: -24px 48px 88px rgba(24, 35, 52, 0.32); */
   transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotate(0deg)
     scaleY(0.9) scaleX(0.95) translateX(0%) translateY(0%);
+}
+
+/* Contact */
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-item::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30%;
+  background: var(--gray-color);
+  opacity: 0.8;
+  margin: 1.5rem auto;
+}
+.contact-item:last-child::after {
+  display: none;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: var(--green-color);
+}
+
+.contact-info {
+  line-height: 1.6;
+}
+
+.contact-info h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.contact-form form h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid var(--gray-color);
+  outline: none;
+  border-radius: 2px;
+  margin-bottom: 0.8rem;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  border: 1px solid var(--green-color);
+}
+
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
+  opacity: 0.5;
+}
+
+.contact-form form input[type="submit"] {
+  text-transform: uppercase;
 }
