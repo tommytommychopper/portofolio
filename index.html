@@ -188,13 +188,12 @@
             </div>
           </div>
           <div class="contact-form">
-            <form action="#">
+            <form name="contact" method="POST" data-netlify="true">
               <h3>Message Me</h3>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
+              <input type="text" name="name" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email" />
               <textarea
-                name=""
-                id=""
+                name="message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
