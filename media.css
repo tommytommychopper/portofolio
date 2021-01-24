@@ -124,23 +124,7 @@
     margin-top: 0;
   }
 
-  /* .toggler,
-  .hamburger {
-    display: none;
+  .header-container {
+    flex-direction: row;
   }
-
-  .menu-list {
-    display: flex;
-  }
-
-  .nav-item {
-    position: relative;
-    padding: 0.2rem 1.5rem;
-  }
-
-  .nav-link {
-    text-decoration: none;
-    color: var(--dark-color);
-    position: relative;
-  } */
 }

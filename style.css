@@ -9,12 +9,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto Slab", serif;
   background: var(--white-color);
-  color: var(--dark-color);
 }
 
 ul {
@@ -23,10 +23,10 @@ ul {
 
 /* Utilities */
 .container {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   margin: auto;
   overflow: hidden;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .heading {
@@ -73,22 +73,40 @@ header {
   padding: 1rem;
   width: 100%;
   z-index: 10000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #f4f6f7;
   opacity: 0.8;
 }
 
 .header-container {
-  padding: 0 1rem;
+  max-width: 1200px;
+  padding: 0 4rem;
+  margin: auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   font-size: 1.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-color);
+  position: relative;
 }
 
 .nav-link::after {
@@ -115,7 +133,6 @@ header {
   display: grid;
   place-items: center;
   position: relative;
-  z-index: -100;
 }
 
 .card {
@@ -128,6 +145,7 @@ header {
   text-align: center;
   position: relative;
   padding: 2rem;
+  z-index: 1;
 }
 
 .card::before {
@@ -181,6 +199,10 @@ header {
 
 .social-list .social-item {
   padding: 1rem 1.2rem;
+}
+
+.social-list .social-item i {
+  font-size: 2rem;
 }
 
 .social-list .social-item .social-link {
@@ -389,6 +411,8 @@ header {
   opacity: 0.5;
 }
 
-.contact-form form input[type="submit"] {
+.contact-form form button[type="submit"] {
+  display: block;
+  width: 100%;
   text-transform: uppercase;
 }
