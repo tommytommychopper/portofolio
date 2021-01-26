@@ -225,34 +225,6 @@ header {
   z-index: -1000;
 }
 
-.tri-1 {
-  top: 0;
-  left: -5%;
-  transform: rotate(25deg);
-}
-
-.tri-2 {
-  top: 0;
-  right: 0;
-  opacity: 0;
-  visibility: 0;
-  transform: rotate(25deg);
-}
-
-.tri-3 {
-  bottom: 0;
-  left: 0;
-  transform: rotate(-25deg);
-  opacity: 0;
-  visibility: 0;
-}
-
-.tri-4 {
-  bottom: 0;
-  right: 0;
-  transform: rotate(-52deg);
-}
-
 /* Work Section */
 .work-box {
   display: flex;
@@ -302,7 +274,6 @@ header {
 }
 
 .video-right:hover {
-  box-shadow: 24px 48px 88px rgba(24, 35, 52, 0.32);
   transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotate(0deg)
     scaleY(0.9) scaleX(0.95) translateX(0%) translateY(0%);
 }
@@ -315,7 +286,6 @@ header {
 }
 
 .video-left:hover {
-  /* box-shadow: -24px 48px 88px rgba(24, 35, 52, 0.32); */
   transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotate(0deg)
     scaleY(0.9) scaleX(0.95) translateX(0%) translateY(0%);
 }
