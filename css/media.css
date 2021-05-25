@@ -1,130 +1,167 @@
 @media (min-width: 600px) {
-  .container {
-    padding: 4rem 2rem;
-  }
-  .card {
-    flex-direction: row;
-    min-height: 400px;
-  }
+	.container {
+		padding: 4rem 2rem;
+	}
+	.card {
+		flex-direction: row;
+		min-height: 400px;
+	}
 
-  .card::before {
-    clip-path: polygon(20% 100%, 100% 20%, 100% 100%, 0 100%);
-  }
+	.card::before {
+		clip-path: polygon(20% 100%, 100% 20%, 100% 100%, 0 100%);
+	}
 
-  .profile-sidebar {
-    padding: 10px;
-  }
+	.profile-sidebar {
+		padding: 10px;
+	}
 
-  .profile-img {
-    border-radius: 5px;
-    border: 1px solid var(--gray-color);
-    height: 200px;
-    width: 200px;
-  }
+	.profile-img {
+		border-radius: 5px;
+		border: 1px solid var(--gray-color);
+		height: 200px;
+		width: 200px;
+	}
 
-  .profile-main {
-    text-align: left;
-    margin-left: 2rem;
-    padding-top: 2rem;
-  }
+	.profile-main {
+		text-align: left;
+		margin-left: 2rem;
+		padding-top: 2rem;
+	}
 
-  .profile-name {
-    font-size: 1.8rem;
-    letter-spacing: 1.5px;
-  }
+	.profile-name {
+		font-size: 1.8rem;
+		letter-spacing: 1.5px;
+	}
 
-  .profile-position {
-    font-size: 1.2rem;
-    padding-top: 3px;
-  }
+	.profile-position {
+		font-size: 1.2rem;
+		padding-top: 3px;
+	}
 
-  .profile-list {
-    padding-top: 30px;
-    padding-left: 0;
-  }
+	.profile-list {
+		padding-top: 30px;
+		padding-left: 0;
+	}
 
-  .profile-link {
-    margin-left: 0;
-  }
+	.profile-link {
+		margin-left: 0;
+	}
 
-  .tri-1 {
-    top: 0;
-    left: 10%;
-    transform: rotate(25deg);
-  }
+	.tri-1 {
+		top: 0;
+		left: 10%;
+		transform: rotate(25deg);
+	}
 
-  .tri-2 {
-    top: 0;
-    right: 0;
-    opacity: 1;
-    visibility: 1;
-    transform: rotate(25deg);
-  }
+	.tri-2 {
+		top: 0;
+		right: 0;
+		opacity: 1;
+		visibility: 1;
+		transform: rotate(25deg);
+	}
 
-  .tri-3 {
-    bottom: 0;
-    left: 0;
-    transform: rotate(-25deg);
-    opacity: 0;
-    visibility: 0;
-  }
+	.tri-3 {
+		bottom: 0;
+		left: 0;
+		transform: rotate(-25deg);
+		opacity: 0;
+		visibility: 0;
+	}
 
-  .tri-4 {
-    bottom: 0;
-    right: 10%;
-    transform: rotate(-52deg);
-  }
-  .work-box {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
+	.tri-4 {
+		bottom: 0;
+		right: 10%;
+		transform: rotate(-52deg);
+	}
+	.work-box {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
 
-  .work-box:last-child {
-    flex-direction: row-reverse;
-  }
+	.work-box:last-child {
+		flex-direction: row-reverse;
+	}
 
-  /* Contact */
-  .contact-box {
-    flex-direction: row;
-  }
+	/* Contact */
+	.contact-box {
+		flex-direction: row;
+	}
 
-  .contact-list {
-    text-align: left;
-  }
+	.contact-list {
+		text-align: left;
+	}
 
-  .contact-item {
-    display: flex;
-    text-align: left;
-    padding: 1rem;
-    line-height: 1.4;
-  }
+	.contact-item {
+		display: flex;
+		text-align: left;
+		padding: 1rem;
+		line-height: 1.4;
+	}
 
-  .contact-item::after {
-    display: none;
-  }
+	.contact-item::after {
+		display: none;
+	}
 
-  .contact-info {
-    text-align: left;
-    margin-left: 2rem;
-  }
+	.contact-info {
+		text-align: left;
+		margin-left: 2rem;
+	}
 
-  .contact-info h3 {
-    font-size: 1.3rem;
-    padding: 0;
-  }
+	.contact-info h3 {
+		font-size: 1.3rem;
+		padding: 0;
+	}
 
-  .contact-info p {
-    font-size: 1.3rem;
-    font-weight: 400;
-  }
+	.contact-info p {
+		font-size: 1.3rem;
+		font-weight: 400;
+	}
 
-  .contact-form {
-    display: block;
-    margin-top: 0;
-  }
+	.contact-form {
+		display: block;
+		margin-top: 0;
+	}
 
-  .header-container {
-    flex-direction: row;
-  }
+	.header-container {
+		flex-direction: row;
+	}
+
+	.btn-link--expired::before,
+	.btn-link--expired::after {
+		--tooltip-color: #333;
+		--arrow-size: 15px;
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		transform: translateX(-50%) translateY(var(--translate-y, 0));
+		transition: opacity 600ms;
+		transform-origin: top center;
+		opacity: 0;
+	}
+	.btn-link--expired:hover::before,
+	.btn-link--expired:hover::after {
+		opacity: 1;
+	}
+
+	.btn-link--expired::before {
+		--translate-y: 100%;
+		content: 'Not available due to the cost of GCP 🙏';
+		text-transform: none;
+		width: 200%;
+		height: auto;
+		color: #fff;
+		background-color: var(--tooltip-color);
+		padding: 5px;
+		font-size: 0.8rem;
+		border-radius: 10px;
+		text-align: left;
+	}
+	.btn-link--expired::after {
+		border: var(--arrow-size) solid transparent;
+		border-bottom-color: var(--tooltip-color);
+		transform-origin: bottom center;
+	}
 }
